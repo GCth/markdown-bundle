@@ -799,7 +799,7 @@
               bootbox.prompt('Insert Hyperlink', 'cancel', 'insert', function(result) {
                   if (result !== null) {
                       // transform selection and set the cursor into chunked text
-                      e.replaceSelection('['+chunk+']('+result+' "enter image title here")')
+                      e.replaceSelection('!['+chunk+']('+result+' "enter image title here")')
                       cursor = selected.start+1
 
                       // Set the next tab
